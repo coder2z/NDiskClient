@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+    const ipcRender = nodeRequire("../pkg/ipcRender");
+  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title and other stuffs -->
+  <title>NDisk 首页</title>
+  <meta name="author" content="">
+  <!-- Stylesheets -->
+  <link href="style/bootstrap.css" rel="stylesheet">
+  <!-- Font awesome icon -->
+  <link rel="stylesheet" href="style/font-awesome.css"> 
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="style/jquery-ui.css"> 
+  <!-- Calendar -->
+  <link rel="stylesheet" href="style/fullcalendar.css">
+  <!-- prettyPhoto -->
+  <link rel="stylesheet" href="style/prettyPhoto.css">  
+  <!-- Star rating -->
+  <link rel="stylesheet" href="style/rateit.css">
+  <!-- Date picker -->
+  <link rel="stylesheet" href="style/bootstrap-datetimepicker.min.css">
+  <!-- CLEditor -->
+  <link rel="stylesheet" href="style/jquery.cleditor.css"> 
+  <!-- Uniform -->
+  <link rel="stylesheet" href="style/uniform.default.css"> 
+  <!-- Bootstrap toggle -->
+  <link rel="stylesheet" href="style/bootstrap-switch.css">
+  <!-- Main stylesheet -->
+  <link href="style/style.css" rel="stylesheet">
+  <!-- Widgets stylesheet -->
+  <link href="style/widgets.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  
+    <div class="conjtainer">
+      <!-- Menu button for smallar screens -->
+      <div class="navbar-header">
+		  <!-- Site name for smallar screens -->
+		  <a href="index.html" class="navbar-brand hidden-lg"></a>
+		</div>
+      
+      
+
+      <!-- Navigation starts -->
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <!-- Search form -->
+        <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+        <!-- Links -->
+        <ul class="nav navbar-nav pull-right">
+           <li class="dropdown pull-right">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <i class="icon-user"></i> 管理员 <b class="caret"></b>              
+            </a>
+            
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon-user"></i> 资料</a></li>
+              <li><a href="#"><i class="icon-cogs"></i> 设置</a></li>
+              <li><a href="login.html"><i class="icon-off"></i> 退出</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+<!-- Header starts -->
+  <header>
+    <div class="container">
+       </div>
+  </header>
+
+<!-- Header ends -->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+  	<!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-dropdown"><a href="#">导航</a></div>
+
+        <!--- Sidebar navigation -->
+        <!-- If the main navigation has sub navigation, then add the class "has_sub" to "li" of main navigation. -->
+        <ul id="nav">
+          <!-- Main menu with font awesome icon -->
+        </ul>
+    </div>
+
+    <!-- Sidebar ends -->
+
+  	  	<!-- Main bar -->
+  	<div class="mainbar">
+      
+	    <!-- Page heading -->
+	    <div class="page-head">
+	      <h2 class="pull-left"><i class="icon-home"></i> 我的文件</h2>
+
+        <!-- Breadcrumb -->
+
+          <h2 class="pull-right">
+             <a href="#" class="label label-success" ><i class="icon-cloud-upload"></i>上传</a>
+             <a href="#" class="label label-default" ><i class="icon-folder-open-alt"></i>新建文件夹</a>
+          </h2>
+
+          <div class="clearfix"></div>
+	    </div>
+	    <!-- Page heading ends -->
+
+
+
+	    <!-- Matter -->
+
+	    <div class="matter" id="pjax-container">
+
+        </div>
+
+		<!-- Matter ends -->
+
+    </div>
+
+   <!-- Mainbar ends -->
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!-- Footer starts -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+            <!-- Copyright info -->
+            <p class="copy">Copyright &copy; 2020 | <a href="#">Your Site</a> </p>
+      </div>
+    </div>
+  </div>
+</footer> 	
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+<!-- JS -->
+<script src="js/jquery.js"></script> <!-- jQuery -->
+<script src="js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="js/pjax.js"></script> <!-- Pjax -->
+<script src="js/menu.js"></script>
+</body>
+</html>
